@@ -1,1 +1,2 @@
-# tsfqx-cmp_sc4990sp21
+# CMP_SC 4990 Undergraduate Research in Computer Science /Spring 2021 / University of Missouri 
+# TSFQX - Thunnathorne Synhiranakkrakul 
