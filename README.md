@@ -9,7 +9,7 @@
 - Learn about how to set up, install and use the Spot 
 - Learn about how to controll the robot from program and controller
 
-### Backgrounds![image](https://user-images.githubusercontent.com/49804761/117063784-ee950380-acea-11eb-84aa-e23e9f0c3580.png)
+### Backgrounds:
 
 
 
