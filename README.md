@@ -1,12 +1,17 @@
 # CMP_SC 4990 Undergraduate Research in Computer Science /Spring 2021 / University of Missouri 
 #### The Spot from Boston Dynamics / Thunnathorne Synhiranakkrakul ( TSFQX ) 
 
-### Objective:
+### Motivations:
+- In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control spots, future works, this project might be adapted to ios or android os in the future to make more mobility to control the spots.
+
+
+### Objectives:
 - Learn about how to set up, install and use the Spot 
 - Learn about how to controll the robot from program and controller
 
-### Motivation:
-- In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control spots, future works, this project might be adapted to ios or android os in the future to make more mobility to control the spots.
+### Backgrounds![image](https://user-images.githubusercontent.com/49804761/117063784-ee950380-acea-11eb-84aa-e23e9f0c3580.png)
+
+
 
 ### Install Spots Diagram:
 ![Install_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063358-539c2980-acea-11eb-8e15-ffaea315e7af.jpg)
