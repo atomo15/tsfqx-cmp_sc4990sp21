@@ -49,16 +49,21 @@
 
 ### Experimental results:
 #### Detect Input Part:
-- Detecting the input from keyboard and condition is works
-- Separate function between Body cam and Ptz cam is works
+- Obstacle:
+  - Find the area to put condition
+- Progress:
+  - Detecting the input from keyboard and condition is works
+  - Separate function between Body cam and Ptz cam is works
 #### Body Camera Part:
-##### Obstacle:
-##### Progress:
+- Obstacle:
+  - Capture in real time
+- Progress:
   - Image instance which is control body camera is work and can get images from these camera
   - Trying to select, switch the camera and capture image from the keyboard 
 #### Ptz Part:
 - Obstacle:
    -  Calling Methods of Ptz's instance and the parameter
+   
 - Progress:
    -  Import the ptz library correctly except in case of calling function which is the method in the ptz's instance
 
