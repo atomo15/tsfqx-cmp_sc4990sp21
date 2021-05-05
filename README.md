@@ -21,7 +21,8 @@
 
 
 ### Tsfqx Project Diagram:
-![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117059804-cb1b8a00-ace5-11eb-8a9a-2f7aef47be19.jpg)
+![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
+
 
 ### Experimental results:
 
