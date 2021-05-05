@@ -38,6 +38,9 @@
 - Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
 - Create an condition to separate control between the body cam and ptz cam
 - Press 1 for controlling body cam and Press 2 for controlling Ptz cam
+- For Press 1 (Control Body Cam): 
+  - Using left arrow(<-) and right arrow (->) to switch the camera view
+  - Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
 #### Body Camera Part:
 - Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
 #### Ptz Part:
