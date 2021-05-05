@@ -26,13 +26,23 @@
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
 
 ### Implementations:
-- First of all, I create a prototype to detect the input from keyboard, then,  create conditions in order to command the spots
-- Second, I try to understand how we create an instance for command the spots, in this case, we focusing on how to control the camera, which is from the body and PTZ parts which is more advance of camera
+#### Detect Input Part:
+- Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
+#### Body Camera Part:
+- Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
+#### Ptz Part:
+- Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
 
 
 ### Experimental results:
+#### Detect Input Part:
 - Detecting the input from keyboard and condition is works
-- The Ptz instance does not work yet, but Image instance which is control body camera is work and can get images from these camera
+#### Body Camera Part:
+- Image instance which is control body camera is work and can get images from these camera
+- Trying to select, switch the camera and capture image from the keyboard 
+#### Ptz Part:
+- The Ptz instance does not work yet, but I can import the ptz library correctly except in case of calling function which is in the ptz's instance
+
 
 ### Conclusions:
 
