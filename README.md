@@ -19,6 +19,7 @@
 - Understand about how the spots work
 - Understand the library and structure of Boston Dynamics Stuff
 
+
 ### Backgrounds:
 - The problem is when we want to control the spot, we need to control it by the main controller which is big like a PSP with a big Android screen and not easy to carry. if we could transform the controller into Mobile Application in order to have more mobility caused by today people always keep the phone with them all the time. for this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library.
 
@@ -26,14 +27,19 @@
 ### Install Spots Diagram:
 ![Install_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063358-539c2980-acea-11eb-8e15-ffaea315e7af.jpg)
 
+
 ### Work on Spots Diagram:
 ![Run_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063418-6ca4da80-acea-11eb-9705-064c116ab8a0.jpg)
+
 
 
 ### Tsfqx Project Diagram:
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
 
+
 ### Implementations:
+
+
 #### Detect Input Part:
 - Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
 - Create an condition to separate control between the body cam and ptz cam
@@ -41,28 +47,34 @@
 - For Press 1 (Control Body Cam): 
   - Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view
   - Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
+
 #### Body Camera Part:
 - Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
+
 #### Ptz Part:
 - Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
 
 
 ### Experimental results:
+
+
 #### Detect Input Part:
 - Obstacle:
   - Find the area to put condition
 - Progress:
   - Detecting the input from keyboard and condition is works
   - Separate function between Body cam and Ptz cam is works
+ 
 #### Body Camera Part:
 - Obstacle:
   - Capture in real time
 - Progress:
   - Image instance which is control body camera is work and can get images from these camera
   - Trying to select, switch the camera and capture image from the keyboard 
+
 #### Ptz Part:
 - Obstacle:
-   -  Calling Methods of Ptz's instance and the parameter
+   -  Calling Methods of Ptz's instance and passing the parameter
    
 - Progress:
    -  Import the ptz library correctly except in case of calling function which is the method in the ptz's instance
