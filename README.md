@@ -41,7 +41,7 @@
 
 
 #### Detect Input Part:
-- Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
+- [x] Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
 - Create an condition to separate control between the body cam and ptz cam
 - Press 1 for controlling body cam and Press 2 for controlling Ptz cam
 - For Press 1 (Control Body Cam): 
