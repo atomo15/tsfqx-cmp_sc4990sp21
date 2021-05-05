@@ -5,7 +5,9 @@
 ![spot_body](https://user-images.githubusercontent.com/49804761/117091110-eacfa400-ad1f-11eb-9dbb-e38d3e4c62f7.jpeg)
 
 ### Spot Cam (PTZ):
+<div align="center">
 ![spot_cam](https://user-images.githubusercontent.com/49804761/117091165-0c309000-ad20-11eb-9555-f0053f610bef.jpeg)
+</div>
 
 
 
