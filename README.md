@@ -63,7 +63,7 @@
 #### Ptz Part:
 - [x] Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
 - [ ] Create Ptz instance
-- [ ] Sync the 
+- [ ] Sync the Ptz with the keyboard command
 - [ ] Calling set position of Ptz (spot cam)
 - [ ] Calling get Image od Ptz (spot cam)
 
