@@ -10,7 +10,7 @@
 
 
 ### Motivations:
-- In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control spots, future works, this project might be adapted to ios or android os in the future to make more mobility to control the spots.
+- Nowadays people keep the smart phone with them all the time, In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control spots, future works, this project might be adapted to ios or android os in the future to make more mobility to control the spots and can carry your controller with them all the time, easy to charge controller.
 
 
 ### Objectives:
@@ -52,10 +52,15 @@
 - Detecting the input from keyboard and condition is works
 - Separate function between Body cam and Ptz cam is works
 #### Body Camera Part:
-- Image instance which is control body camera is work and can get images from these camera
-- Trying to select, switch the camera and capture image from the keyboard 
+##### Obstacle:
+##### Progress:
+  - Image instance which is control body camera is work and can get images from these camera
+  - Trying to select, switch the camera and capture image from the keyboard 
 #### Ptz Part:
-- The Ptz instance does not work yet, but I can import the ptz library correctly except in case of calling function which is in the ptz's instance
+##### Obstacle:
+   -  Calling Methods of Ptz's instance and the parameter
+##### Progress:
+   -  Import the ptz library correctly except in case of calling function which is the method in the ptz's instance
 
 
 ### Conclusions:
