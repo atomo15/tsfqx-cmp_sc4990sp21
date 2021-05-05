@@ -31,8 +31,8 @@
 
 
 ### Experimental results:
-- I can detect the input from keyboard and condition
-- 
+- Detecting the input from keyboard and condition is works
+- The Ptz instance does not work yet, but Image instance which is control body camera is work and can get images from these camera
 
 ### Conclusions:
 
