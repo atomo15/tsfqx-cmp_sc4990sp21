@@ -8,9 +8,11 @@
 ### Objectives:
 - Learn about how to set up, install and use the Spot 
 - Learn about how to controll the robot from program and controller
+- Understand about how the spots work
+- Understand the library and structure of Boston Dynamics Stuff
 
 ### Backgrounds:
-
+- The problem is when we want to control the spot, we need to control it by the main controller which is big like a PSP with a big Android screen and not easy to carry. if we could transform the controller into Mobile Application in order to have more mobility caused by today people always keep the phone with them all the time. for this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library.
 
 
 ### Install Spots Diagram:
@@ -23,8 +25,14 @@
 ### Tsfqx Project Diagram:
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
 
+### Implementations:
+- First of all, I create a prototype to detect the input from keyboard, then,  create conditions in order to command the spots
+- Second, I try to understand how we create an instance for command the spots, in this case, we focusing on how to control the camera, which is from the body and PTZ parts which is more advance of camera
+
 
 ### Experimental results:
+- I can detect the input from keyboard and condition
+- 
 
 ### Conclusions:
 
