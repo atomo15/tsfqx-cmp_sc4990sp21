@@ -1,11 +1,12 @@
 # CMP_SC 4990 Undergraduate Research in Computer Science /Spring 2021 / University of Missouri 
 #### The Spot from Boston Dynamics / Thunnathorne Synhiranakkrakul ( TSFQX ) 
 
-### **Spot body camera:**
+### **Spot Camera:**
 ![spot_body](https://user-images.githubusercontent.com/49804761/117091110-eacfa400-ad1f-11eb-9dbb-e38d3e4c62f7.jpeg)
 
 ### Spot Cam (PTZ):
 ![spot_cam](https://user-images.githubusercontent.com/49804761/117091165-0c309000-ad20-11eb-9555-f0053f610bef.jpeg)
+
 
 
 
@@ -15,10 +16,9 @@
 
 ### Objectives:
 - Learn about how to set up, install and use the Spot 
-- Learn about how to controll the robot from program and controller
+- Learn about how to control the robot from program and controller
 - Understand about how the spots work
 - Understand the library and structure of Boston Dynamics Stuff
-
 
 ### Backgrounds:
 - The problem is when we want to control the spot, we need to control it by the main controller which is big like a PSP with a big Android screen and not easy to carry. if we could transform the controller into Mobile Application in order to have more mobility caused by today people always keep the phone with them all the time. for this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library.
@@ -53,11 +53,11 @@
   - [x] Using Uo-arrow button and Down-arrow button to switch the camera view in Vertical (Hold value in variable)
   - [x] Using = and - to zoom in and out respectively (Hold value in variable)
 
-#### Body Camera Part:
+#### Camera Spot Part:
 - [x] Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
 - [x] Calling get image method
-- [ ] Sync the button to the body camera spot
-- [ ] switch the camera view by pressing button 
+- [ ] Sync the button to the camera of spot
+- [ ] Switching the camera view by pressing button 
 - [ ] Pressing Enter to Capture the picture
 
 #### Ptz Part:
