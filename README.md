@@ -57,9 +57,9 @@
   - Image instance which is control body camera is work and can get images from these camera
   - Trying to select, switch the camera and capture image from the keyboard 
 #### Ptz Part:
-##### Obstacle:
+- Obstacle:
    -  Calling Methods of Ptz's instance and the parameter
-##### Progress:
+- Progress:
    -  Import the ptz library correctly except in case of calling function which is the method in the ptz's instance
 
 
