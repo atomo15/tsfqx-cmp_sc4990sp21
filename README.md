@@ -28,6 +28,8 @@
 ### Implementations:
 #### Detect Input Part:
 - Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
+- Create an condition to separate control between the body cam and ptz cam
+- Press 1 for controlling body cam and Press 2 for controlling Ptz cam
 #### Body Camera Part:
 - Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
 #### Ptz Part:
@@ -37,6 +39,7 @@
 ### Experimental results:
 #### Detect Input Part:
 - Detecting the input from keyboard and condition is works
+- Separate function between Body cam and Ptz cam is works
 #### Body Camera Part:
 - Image instance which is control body camera is work and can get images from these camera
 - Trying to select, switch the camera and capture image from the keyboard 
