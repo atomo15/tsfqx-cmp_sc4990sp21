@@ -42,17 +42,25 @@
 
 #### Detect Input Part:
 - [x] Using "from pynput import keyboard", "from pynput.keyboard import Key" and "with keyboard.Listener" to detecting input from keyboard 
-- Create an condition to separate control between the body cam and ptz cam
-- Press 1 for controlling body cam and Press 2 for controlling Ptz cam
-- For Press 1 (Control Body Cam): 
-  - Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view
-  - Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
+- [x] Create an condition to separate control between the body cam and ptz cam
+- [x] Press 1 for controlling body cam and Press 2 for controlling Ptz cam
+- [x] For Press 1 (Control Body Cam): 
+  - [x] Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view
+  - [x] Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
 
 #### Body Camera Part:
-- Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
+- [x] Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
+- [x] Calling get image method
+- [ ] Sync the button to the body camera spot
+- [ ] switch the camera view by pressing button 
+- [ ] Pressing Enter to Capture the picture
 
 #### Ptz Part:
-- Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
+- [x] Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
+- [ ] Create Ptz instance
+- [ ] Sync the 
+- [ ] Calling set position of Ptz (spot cam)
+- [ ] Calling get Image od Ptz (spot cam)
 
 
 ### Experimental results:
