@@ -71,28 +71,28 @@
       - [x] Press 2 for Control Spot Cam Ptz condition: 
         - [x] if key.char == '2':
         - [x] select_menu = " Ptz" 
-- [x] For Press 1 (Control Body Cam): 
-  - [x] if select_menu == " Image":
-  - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
-  - [x] While using buttons, save the position of camera in variable
-    - [x] For Left-arrow button ( ← ):
-      - [x] c_index = c_index - 1             # Decrease Index of Camera View 
-      - [x] if c_index <0:                    # Check Index is not lower than zero after subtracted
-      - [x] c_index = 0                       # If the result lower than zero assign zero instead of the result
-      - [x] camera = image_source[c_index]    # Save Current Camera View
-    - [x] For Right-arrow button ( → ):
-      - [x] c_index = c_index + 1             # Increase Index of Camera View 
-      - [x] if c_index == len(image_source):  # Check Index out of range or not after add index
-      - [x] c_index = 0                       # If the result higher than the max index assign zero instead of the result
-      - [x] camera = image_source[c_index]    # Save Current Camera View
-  - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage 
-     - [x] image_response = image_client.get_image_from_sources([camera])[0]
-     
-- [x] For Press 2 (Control Spot Cam, PTZ):
-  - [x] if select_menu == " Ptz":
-  - [x] Using Left-arrow button ( ← ) and Right-arrow button ( → ) to switch the camera view in horizontal (Hold value in variable)
-  - [x] Using Up-arrow button ( ↑ ) and Down-arrow button ( ↓ ) to switch the camera view in Vertical (Hold value in variable)
-  - [x] Using = and - to zoom in and out respectively (Hold value in variable)
+  - [x] For Press 1 (Control Body Cam): 
+    - [x] if select_menu == " Image":
+    - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
+    - [x] While using buttons, save the position of camera in variable
+      - [x] For Left-arrow button ( ← ):
+        - [x] c_index = c_index - 1             # Decrease Index of Camera View 
+        - [x] if c_index <0:                    # Check Index is not lower than zero after subtracted
+        - [x] c_index = 0                       # If the result lower than zero assign zero instead of the result
+        - [x] camera = image_source[c_index]    # Save Current Camera View
+      - [x] For Right-arrow button ( → ):
+        - [x] c_index = c_index + 1             # Increase Index of Camera View 
+        - [x] if c_index == len(image_source):  # Check Index out of range or not after add index
+        - [x] c_index = 0                       # If the result higher than the max index assign zero instead of the result
+        - [x] camera = image_source[c_index]    # Save Current Camera View
+    - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage 
+       - [x] image_response = image_client.get_image_from_sources([camera])[0]
+
+  - [x] For Press 2 (Control Spot Cam, PTZ):
+    - [x] if select_menu == " Ptz":
+    - [x] Using Left-arrow button ( ← ) and Right-arrow button ( → ) to switch the camera view in horizontal (Hold value in variable)
+    - [x] Using Up-arrow button ( ↑ ) and Down-arrow button ( ↓ ) to switch the camera view in Vertical (Hold value in variable)
+    - [x] Using = and - to zoom in and out respectively (Hold value in variable)
 
 #### Camera Spot Part:
 - [x] Import the library for using Camera Spot:
