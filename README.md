@@ -39,7 +39,8 @@
 
 
 ### Spot | Body Camera Diagram Process:
-![Image_Diagram](https://user-images.githubusercontent.com/49804761/117349743-5b3a0a80-ae71-11eb-982e-c29486cc963b.jpg)
+![Image_Diagram](https://user-images.githubusercontent.com/49804761/117373041-2b4e2f80-ae90-11eb-97b3-ec4527f42a46.jpg)
+
 
 
 ### Spot CAM | Ptz Diagram Process: 
