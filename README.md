@@ -26,7 +26,7 @@
 
 ###Diagram:
 
-### Install Spots Diagram:
+### Normal Install Spots Diagram:
 ![Install_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063358-539c2980-acea-11eb-8e15-ffaea315e7af.jpg)
 
 
@@ -34,13 +34,15 @@
 ![Run_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063418-6ca4da80-acea-11eb-9705-064c116ab8a0.jpg)
 
 
-
 ### Overview Tsfqx Project Diagram:
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
 
-### Body Camera Diagram Process:
+
+### Spot | Body Camera Diagram Process:
 ![Image_Diagram](https://user-images.githubusercontent.com/49804761/117349743-5b3a0a80-ae71-11eb-982e-c29486cc963b.jpg)
 
+
+### Spot CAM | Ptz Diagram Process: 
 
 
 ### Implementations:
