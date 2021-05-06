@@ -45,8 +45,10 @@
   - [x] from pynput import keyboard
   - [x] from pynput.keyboard import Key 
 - [x] Detecting Input from Keyboard:
-  - [x] with keyboard.Listener(on_press=on_press,on_release=on_release) as listener:
-  - [x]   listener.join()
+  - [x] with keyboard.Listener(
+                on_press=on_press,
+                on_release=on_release) as listener:
+            listener.join()
 - [x] Create an condition to separate control between the body cam and ptz cam
 - [x] Press 1 for controlling body cam and Press 2 for controlling Ptz cam
 - [x] For Press 1 (Control Body Cam): 
