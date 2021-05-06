@@ -61,11 +61,11 @@
 - [ ] Pressing Enter to Capture the picture
 
 #### Ptz Part:
-- [x] Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
-- [x] Register Spot Cam (Ptz):
+- [x] Import the library for using Spot CAM (Ptz):
   - [x] from bosdyn.client.spot_cam.ptz import PtzClient
   - [x] from bosdyn.client import spot_cam
   - [x] from bosdyn.api.spot_cam import ptz_pb2
+- [x] Register Spot Cam (Ptz):
   - [x] spot_cam.register_all_service_clients(sdk)
 - [x] Create Ptz instance:
   - [x] ptz_client = robot.ensure_client(PtzClient.default_service_name)
