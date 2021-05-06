@@ -62,7 +62,8 @@
 
 #### Ptz Part:
 - [x] Import the library which is "from bosdyn.client.spot_cam.ptz import PtzClient"
-- [ ] Create Ptz instance
+- [x] Register Spot Cam (Ptz) => ["from bosdyn.client.spot_cam.ptz import PtzClient,from bosdyn.client import spot_cam,from bosdyn.api.spot_cam import ptz_pb2, spot_cam.register_all_service_clients(sdk)]
+- [x] Create Ptz instance => ["ptz_client = robot.ensure_client(PtzClient.default_service_name)"]
 - [ ] Sync the Ptz with the keyboard command
 - [ ] Calling set position of Ptz (spot cam)
 - [ ] Calling get Image od Ptz (spot cam)
