@@ -44,6 +44,7 @@
 
 
 ### Spot CAM | Ptz Diagram Process: 
+![Ptz_Diagram](https://user-images.githubusercontent.com/49804761/117374042-08bd1600-ae92-11eb-8daf-ba4cfe33f556.jpg)
 
 
 ### Implementations:
