@@ -57,16 +57,16 @@
                 on_press=on_press,
                 on_release=on_release) as listener:
             listener.join()
-- [x] Create an condition to separate control between the body cam and ptz cam
-- [x] Using def on_press(key): this Method including below elements
-  - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
-    - [x] Press 1 for Control Spot Body Cam condition: 
-      - [x] if key.char == '1':
-      - [x] camera = image_source[0]
-      - [x] select_menu = " Image"
-    - [x] Press 2 for Control Spot Cam Ptz condition: 
-      - [x] if key.char == '2':
-      - [x] select_menu = " Ptz" 
+- [x] Create an condition to separate control between the body cam and ptz cam:
+  - [x] Using def on_press(key): #Detecting the button that user press on keyboard 
+    - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
+      - [x] Press 1 for Control Spot Body Cam condition: 
+        - [x] if key.char == '1':
+        - [x] camera = image_source[0]
+        - [x] select_menu = " Image"
+      - [x] Press 2 for Control Spot Cam Ptz condition: 
+        - [x] if key.char == '2':
+        - [x] select_menu = " Ptz" 
 - [x] For Press 1 (Control Body Cam): 
   - [x] if select_menu == " Image":
   - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
