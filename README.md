@@ -108,10 +108,11 @@
 
 #### Camera Spot Part:
 - [x] Import the library for using Camera Spot:
-  - [x] from bosdyn.client.image import ImageClient
+  - [x] from bosdyn.client.image import ImageClient #operate spot camera
+  - [x] from PIL import Image #open image file
+  - [x] import io
 - [x] Create Image instance: To use the camera
-- [x] Calling get image method
-- [ ] Sync the button to the camera of spot
+  - [x] image_client = robot.ensure_client(ImageClient.default_service_name)
 - [ ] Switching the camera view by pressing button 
 - [ ] Pressing Enter to Capture the picture
 
