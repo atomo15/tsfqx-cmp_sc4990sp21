@@ -50,6 +50,7 @@
                 on_release=on_release) as listener:
             listener.join()
 - [x] Create an condition to separate control between the body cam and ptz cam
+- [x] Using def on_press(key): this Method including below elements
   - [x] Press 1 for controlling body cam and Press 2 for controlling Ptz cam
     - [x] Press 1 for Control Spot Body Cam condition: 
       - [x] if key.char == '1':
