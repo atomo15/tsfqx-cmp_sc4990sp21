@@ -96,9 +96,12 @@
   #### Ptz Part:
   - Obstacle:
     -  Calling Methods of Ptz's instance and passing the parameter
+    -  Register the ptz package
    
   - Progress:
-    -  Import the ptz library correctly except in case of calling function which is the method in the ptz's instance
+    -  [x] Import the ptz library successfully  
+    -  [x] Register the ptz module successfully  
+    -  [x] Calling Set Position Method of Ptz successfully 
 
 
 ### Conclusions:
