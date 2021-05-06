@@ -69,8 +69,11 @@
   - [x] spot_cam.register_all_service_clients(sdk)
 - [x] Create Ptz instance:
   - [x] ptz_client = robot.ensure_client(PtzClient.default_service_name)
-- [ ] Sync the Ptz with the keyboard command
-- [ ] Calling set position of Ptz (spot cam)
+- [x] Calling set position medthod of Ptz (spot cam)
+  - [x] option_name = "mech"
+  - [x] ptz_desc = ptz_pb2.PtzDescription(name=option_name)
+  - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
+- [x] Sync the Ptz with the keyboard command
 - [ ] Calling get Image od Ptz (spot cam)
 
 
