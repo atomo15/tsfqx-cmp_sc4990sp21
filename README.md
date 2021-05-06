@@ -57,7 +57,7 @@
   - [x] import bosdyn.client
 - [x] Install SDK:
   - [x] sdk = bosdyn.client.create_standard_sdk('spot')
-- [x] Install Spot CAM SDK:
+- [x] Install Spot CAM SDK: Used for Ptz
   - [x] spot_cam.register_all_service_clients(sdk)
 - [x] Create Robot Instance:
   - [x] robot = sdk.create_robot('$SPOTIP')
