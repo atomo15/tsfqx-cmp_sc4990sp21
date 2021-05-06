@@ -91,7 +91,9 @@
   - [x] Using = and - to zoom in and out respectively (Hold value in variable)
 
 #### Camera Spot Part:
-- [x] Creating intance that import from "from bosdyn.client.image import ImageClient" and calling robot.ensure_client method to make image client instance
+- [x] Import the library for using Camera Spot:
+  - [x] from bosdyn.client.image import ImageClient
+- [x] Create Image instance: To use the camera
 - [x] Calling get image method
 - [ ] Sync the button to the camera of spot
 - [ ] Switching the camera view by pressing button 
