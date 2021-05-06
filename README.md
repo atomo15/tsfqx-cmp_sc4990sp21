@@ -24,6 +24,7 @@
 ### Backgrounds:
 - The problem is when we want to control the spot, we need to control it by the main controller which is big like a PSP with a big Android screen and not easy to carry. if we could transform the controller into Mobile Application in order to have more mobility caused by today people always keep the phone with them all the time. for this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library.
 
+###Diagram:
 
 ### Install Spots Diagram:
 ![Install_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063358-539c2980-acea-11eb-8e15-ffaea315e7af.jpg)
@@ -34,8 +35,12 @@
 
 
 
-### Tsfqx Project Diagram:
+### Overview Tsfqx Project Diagram:
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
+
+### Body Camera Diagram Process:
+![Image_Diagram](https://user-images.githubusercontent.com/49804761/117349743-5b3a0a80-ae71-11eb-982e-c29486cc963b.jpg)
+
 
 
 ### Implementations:
