@@ -60,12 +60,14 @@
       - [x] if key.char == '2':
       - [x] select_menu = " Ptz" 
 - [x] For Press 1 (Control Body Cam): 
+  - [x] if select_menu == " Image":
   - [x] Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view
   - [x] While using buttons, save the position of camera in variable
   - [x] Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
 - [x] For Press 2 (Control Spot Cam, PTZ):
+  - [x] if select_menu == " Ptz":
   - [x] Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view in horizontal (Hold value in variable)
-  - [x] Using Uo-arrow button and Down-arrow button to switch the camera view in Vertical (Hold value in variable)
+  - [x] Using Up-arrow button and Down-arrow button to switch the camera view in Vertical (Hold value in variable)
   - [x] Using = and - to zoom in and out respectively (Hold value in variable)
 
 #### Camera Spot Part:
