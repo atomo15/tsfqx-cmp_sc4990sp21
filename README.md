@@ -1,5 +1,6 @@
 # CMP_SC 4990 Undergraduate Research in Computer Science /Spring 2021 / University of Missouri 
-#### The Spot from Boston Dynamics / Thunnathorne Synhiranakkrakul ( TSFQX ) 
+## Instructor: Dr. Dale Musser
+#### The Spot from Boston Dynamics / Thunnathorne Synhiranakkrakul ( TSFQX ) [14351543]
 
 ### **Spot Camera:**
 ![spot_body](https://user-images.githubusercontent.com/49804761/117091110-eacfa400-ad1f-11eb-9dbb-e38d3e4c62f7.jpeg)
