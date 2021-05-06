@@ -51,7 +51,7 @@
             listener.join()
 - [x] Create an condition to separate control between the body cam and ptz cam
 - [x] Using def on_press(key): this Method including below elements
-  - [x] Press 1 for controlling body cam and Press 2 for controlling Ptz cam
+  - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
     - [x] Press 1 for Control Spot Body Cam condition: 
       - [x] if key.char == '1':
       - [x] camera = image_source[0]
@@ -61,8 +61,13 @@
       - [x] select_menu = " Ptz" 
 - [x] For Press 1 (Control Body Cam): 
   - [x] if select_menu == " Image":
-  - [x] Using Left-arrow button (<-) and Right-arrow button (->) to switch the camera view
+  - [x] Using Left-arrow button (<-) [previous camera view] and Right-arrow button (->) [next camera view] to switch the camera view
   - [x] While using buttons, save the position of camera in variable
+    - [x] For leftt-arrow button:
+      - [x] c_index = c_index - 1 # Decrease Index of Camera View 
+      - [x] if c_index <0: # Check Index is not lower than zero after subtracted
+      - [x] c_index = 0
+      - [x] camera = image_source[c_index] # Save Current Camera View
   - [x] Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
 - [x] For Press 2 (Control Spot Cam, PTZ):
   - [x] if select_menu == " Ptz":
