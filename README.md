@@ -71,10 +71,11 @@
       - [x] camera = image_source[c_index]    # Save Current Camera View
     - [x] For Right-arrow button ( → ):
       - [x] c_index = c_index + 1             # Increase Index of Camera View 
-      - [ ] if c_index == len(image_source):  # Check Index out of range or not after add index
-      - [ ] c_index = 0                       # If the result higher than the max index assign zero instead of the result
-      - [ ] camera = image_source[c_index]    # Save Current Camera View
-  - [x] Using Enter button to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
+      - [x] if c_index == len(image_source):  # Check Index out of range or not after add index
+      - [x] c_index = 0                       # If the result higher than the max index assign zero instead of the result
+      - [x] camera = image_source[c_index]    # Save Current Camera View
+  - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage which is same directory of the main program
+     - [x] image_response = image_client.get_image_from_sources([camera])[0]
 - [x] For Press 2 (Control Spot Cam, PTZ):
   - [x] if select_menu == " Ptz":
   - [x] Using Left-arrow button ( ← ) and Right-arrow button ( → ) to switch the camera view in horizontal (Hold value in variable)
