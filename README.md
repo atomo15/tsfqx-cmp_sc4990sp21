@@ -35,7 +35,7 @@
 
 
 ### Overview Tsfqx Project Diagram:
-![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117087850-57de3c00-ad16-11eb-9857-64dad4b07eda.jpg)
+![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117382573-6d816c00-aea4-11eb-84c2-6dc6a4256f82.jpg)
 
 
 ### Setup Spot Process Diagram:
