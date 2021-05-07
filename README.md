@@ -39,6 +39,7 @@
 
 
 ### Setup Spot Process Diagram:
+![Setup_robot](https://user-images.githubusercontent.com/49804761/117382454-2bf0c100-aea4-11eb-831e-cde155a3f3a9.jpg)
 
 
 ### Spot | Body Camera Process Diagram:
