@@ -114,8 +114,10 @@
   - [x] import io
 - [x] Create Image instance: To use the camera
   - [x] image_client = robot.ensure_client(ImageClient.default_service_name)
-- [ ] Switching the camera view by pressing button 
-- [ ] Pressing Enter to Capture the picture
+- [x] Switching the camera view by pressing button 
+  - [x] camera = image_source[c_index]  #Increase or Decrease c_index to change camera view 
+- [x] Pressing Enter to Capture the picture
+  - [x] image_response = image_client.get_image_from_sources([camera])[0]
 
 #### Ptz Part:
 - [x] Import the library for using Spot CAM (Ptz):
@@ -129,8 +131,8 @@
 - [x] Calling set position medthod of Ptz (spot cam)
   - [x] option_name = "mech"
   - [x] ptz_desc = ptz_pb2.PtzDescription(name=option_name)
-  - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
-- [x] Sync the Ptz with the keyboard command
+  - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
+- [x] Synchronize the Ptz with the keyboard command
 - [ ] Calling get Image od Ptz (spot cam)
 
 
@@ -139,26 +141,31 @@
   #### Detect Input Part:
   - Obstacle:
     - Find the area to put condition
-  - Progress:
-    - Detecting the input from keyboard and condition is works
-    - Separate function between Body cam and Ptz cam is works
+    - Handle error with listening keyboard function
+  - Success:
+    - [x] Detecting the input from keyboard and condition 
+    - [x] Separate function between Body cam and Ptz cam 
+    - [x] Memorized current pan, tilt, zoom and the position of camera spot during switch Body cam and Ptz cam
  
   #### Body Camera Part:
   - Obstacle:
-    - Capture in real time
-  - Progress:
-    - Image instance which is control body camera is work and can get images from these camera
-    - Trying to select, switch the camera and capture image from the keyboard 
+    - Capture over 5 photos continously without program crashes 
+  - Success:
+    - [x] Import the Image library  
+    - [x] Create Image instance
+    - [x] Change Camera View
+    - [x] Get Images from these camera
 
   #### Ptz Part:
   - Obstacle:
     -  Calling Methods of Ptz's instance and passing the parameter
     -  Register the ptz package
    
-  - Progress:
-    -  [x] Import the ptz library successfully  
-    -  [x] Register the ptz module successfully  
-    -  [x] Calling Set Position Method of Ptz successfully 
+  - Success:
+    -  [x] Import the ptz library   
+    -  [x] Register the ptz module   
+    -  [x] Create Ptz instance
+    -  [x] Calling Set Position Method of Ptz  
 
 
 ### Conclusions:
