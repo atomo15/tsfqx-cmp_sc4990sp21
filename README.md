@@ -52,10 +52,10 @@
 
 ### Implementations:
 - My implement is consist of 4 parts:
-  - 1. Initial Spot → Install the spots in program
-  - 2. Detect Input → Detecting input from the users
-  - 3. Body Camera Spot → Controlling the Body Camera of the spot
-  - 4. Ptz → Controlling the Spot CAM Ptz 
+  1. Initial Spot → Install the spots in program
+  2. Detect Input → Detecting input from the users
+  3. Body Camera Spot → Controlling the Body Camera of the spot
+  4. Ptz → Controlling the Spot CAM Ptz 
 
 #### Initial Spot Part:
 - [x] Import Libraries:
