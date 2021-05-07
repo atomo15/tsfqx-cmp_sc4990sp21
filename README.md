@@ -12,7 +12,7 @@
 
 
 ### **Motivations**
-- Nowadays people keep the smart phone with them all the time, In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control spots, future works, this project might be adapted to ios or android os in the future to make more mobility to control the spots and can carry your controller with them all the time, easy to charge controller.
+- Nowadays, people keep the smartphone with them all the time, In order to Control the Spots without using the main controller, this project is a prototype of creating a controller using the keyboard to control the camera of spots and spot cam which is Ptz camera. if we can switch the view of body camera of spot, adjust the perspective of Ptz camera like turn the Spot CAM to be left-right, up-down, and zoom in-out by button on the keyboard. moreover, hit the return on the keyboard to capture both images. we would have more mobility to uses both cameras and switching control by press 1 or 2 to switch mode between body camera and Ptz spot cam. the result from this research could be adapted to control both cameras with the transform from keyboard to another platform that can use to be a controller such as iOS or Android, in the future to make more mobility to control the spots and can carry your controller with them all the time, easy to charge controller. finally, all of this research could be used with detecting the object from the camera by changing the view of both cameras in order to easy to observe. 
 
 
 ### Objectives:
