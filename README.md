@@ -16,10 +16,11 @@
 
 
 ### Objectives:
-- Learn about how to set up, install and use the Spot 
-- Learn about how to control the robot from program and controller
-- Understand about how the spots work
+- Learn about how to set up, install and use the Spot
+- Learn about how to control the robot from the program and controller
+- Understand how the spots work
 - Understand the library and structure of Boston Dynamics Stuff
+- Understand how to adapt the Boston Dynamics to python programing 
 
 ### Backgrounds:
 - The problem is when we want to control the spot, we need to control it by the main controller which is big like a PSP( PlayStation Portable) or Nintendo switch with a big Android screen and not easy to carry. if we could transform the controller into Mobile Application in order to have more mobility caused by today people always keep the phone with them all the time. moreover, in order to detect objects using the camera for analyzing the data such as Images Processing, Machine Learning, and Deep Learning. all of these might need to observe around the spots that need to explore more dimensions, more perspective view for better analysis that why we need to understand how to use the equipment of Boston Dynamics which is spots in terms of coding and solve all of these problems.
