@@ -34,24 +34,28 @@
 ![Run_Spot_Diagram](https://user-images.githubusercontent.com/49804761/117063418-6ca4da80-acea-11eb-9705-064c116ab8a0.jpg)
 
 
-### Overview Tsfqx Project Diagram:
+### Overview Tsfqx Project Diagram: Algorithm in Program
 ![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117382573-6d816c00-aea4-11eb-84c2-6dc6a4256f82.jpg)
 
 
-### Setup Spot Process Diagram:
+### Setup Spot Process Diagram: Tsfqx Program
 ![Setup_robot](https://user-images.githubusercontent.com/49804761/117382454-2bf0c100-aea4-11eb-831e-cde155a3f3a9.jpg)
 
 
-### Spot | Body Camera Process Diagram:
+### Spot | Body Camera Process Diagram: Tsfqx Program
 ![Image_Diagram](https://user-images.githubusercontent.com/49804761/117373041-2b4e2f80-ae90-11eb-97b3-ec4527f42a46.jpg)
 
 
-### Spot CAM | Ptz Process Diagram: 
+### Spot CAM | Ptz Process Diagram: Tsfqx Program
 ![Ptz_Diagram](https://user-images.githubusercontent.com/49804761/117374042-08bd1600-ae92-11eb-8daf-ba4cfe33f556.jpg)
 
 
 ### Implementations:
-
+- My implement is consist of 4 parts:
+  - 1. Initial Spot → Install the spots in program
+  - 2. Detect Input → Detecting input from the users
+  - 3. Body Camera Spot → Controlling the Body Camera of the spot
+  - 4. Ptz → Controlling the Spot CAM Ptz 
 
 #### Initial Spot Part:
 - [x] Import Libraries:
