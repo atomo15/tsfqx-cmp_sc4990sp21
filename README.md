@@ -70,11 +70,17 @@
   sdk = bosdyn.client.create_standard_sdk('spot')
 ```
 - [x] Register Spot CAM SDK: Used for Ptz
-  - [x] spot_cam.register_all_service_clients(sdk)
+```python 
+  spot_cam.register_all_service_clients(sdk)
+```
 - [x] Create Robot Instance:
-  - [x] robot = sdk.create_robot('$SPOTIP')
+```python 
+  robot = sdk.create_robot('$SPOTIP')
+```
 - [x] Authenticated Spot:
-  - [x] robot.authenticate('$username', '$password')
+```python 
+  robot.authenticate('$username', '$password')
+```
 
 #### Detect Input Part:
 - [x] Import Libraries:
