@@ -113,7 +113,9 @@
           select_menu = " Ptz" 
         ```
   - [x] For Press 1 (Control Body Cam): 
-    - [x] if select_menu == " Image":
+    ```python 
+    if select_menu == " Image":
+    ```
     - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
     - [x] While using buttons, save the position of camera in variable
       - [x] For Left-arrow button ( ← ):
