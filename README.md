@@ -139,7 +139,7 @@
     - [x] import tempfile
     - [x] import shutil
     - [x] class Namespace:
-    def __init__(self, **kwargs):
+        def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
 - [x] Register Spot Cam (Ptz):
   - [x] spot_cam.register_all_service_clients(sdk)
