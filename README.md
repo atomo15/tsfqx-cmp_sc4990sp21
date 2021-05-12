@@ -128,9 +128,19 @@
 
 #### Ptz Part:
 - [x] Import the library for using Spot CAM (Ptz):
-  - [x] from bosdyn.client.spot_cam.ptz import PtzClient
-  - [x] from bosdyn.client import spot_cam
-  - [x] from bosdyn.api.spot_cam import ptz_pb2
+  - [x] Control the Ptz Spot CAM:
+    - [x] from bosdyn.client.spot_cam.ptz import PtzClient
+    - [x] from bosdyn.client import spot_cam
+    - [x] from bosdyn.api.spot_cam import ptz_pb2
+  - [x] Capture Image from the Ptz Spot CAM:
+    - [x] from bosdyn.client.spot_cam.media_log import MediaLogClient
+    - [x] from bosdyn.api import image_pb2
+    - [x] from bosdyn.api.spot_cam import logging_pb2, camera_pb2
+    - [x] import tempfile
+    - [x] import shutil
+    - [x] class Namespace:
+    def __init__(self, **kwargs):
+        self.__dict__.update(kwargs)
 - [x] Register Spot Cam (Ptz):
   - [x] spot_cam.register_all_service_clients(sdk)
 - [x] Create Ptz instance:
@@ -140,7 +150,38 @@
   - [x] ptz_desc = ptz_pb2.PtzDescription(name=option_name)
   - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
 - [x] Synchronize the Ptz with the keyboard command
-- [ ] Calling get Image od Ptz (spot cam)
+- [x] Capture Image From Ptz:
+  - [ ] global args
+                lp = medialog_client.store(*args)
+                while lp.status != logging_pb2.Logpoint.COMPLETE:
+                    lp = medialog_client.get_status(lp)
+                options = Namespace(camera_name='ptz', command='media_log', dst=None, hostname='192.168.80.3', media_log_command='store_retrieve', password='atom29589990',save_as_rgb24=False, stitching=True, username='atom',verbose=False)
+            
+                ir_flag = hasattr(options, 'camera_name') and options.camera_name == 'ir'
+                
+                if options.stitching or ir_flag:
+                    lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve(lp)
+                else:
+                    lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve_raw_data(lp)
+                    
+                with tempfile.NamedTemporaryFile(delete=False) as img_file:
+                    img_file.write(img)
+                    src_filename = img_file.name
+                
+                dst_filename = os.path.basename(src_filename)
+                
+                if lp.image_params.height == 4800 or (lp.image_params.width == 640 and lp.image_params.height == 512):
+                    shutil.move(src_filename, '{}.jpg'.format(dst_filename))
+                else:
+                    target_filename = '{}-{}x{}.rgb24'.format(dst_filename, lp.image_params.width, lp.image_params.height)
+                    shutil.move(src_filename, target_filename)
+                    if not options.save_as_rgb24:
+                        with open(target_filename, mode='rb') as fd:
+                            data = fd.read()
+                        mode = 'RGB'
+                        image = Image.frombuffer(mode, (lp.image_params.width, lp.image_params.height), data, 'raw', mode, 0, 1)
+                        image.save('{}.jpg'.format(dst_filename))
+                        os.remove(target_filename)
 
 
 ### Experimental results:
