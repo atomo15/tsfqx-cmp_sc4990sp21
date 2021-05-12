@@ -100,13 +100,15 @@
     - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
       - [x] Press 1 for Control Spot Body Cam condition: 
         ```python 
-        - [x] if key.char == '1':
-        - [x] camera = image_source[0]
-        - [x] select_menu = " Image"
-        ```python 
+        if key.char == '1':
+          camera = image_source[0]
+          select_menu = " Image"
+        ```
       - [x] Press 2 for Control Spot Cam Ptz condition: 
-        - [x] if key.char == '2':
-        - [x] select_menu = " Ptz" 
+        ```python 
+        if key.char == '2':
+          select_menu = " Ptz" 
+        ```
   - [x] For Press 1 (Control Body Cam): 
     - [x] if select_menu == " Image":
     - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
