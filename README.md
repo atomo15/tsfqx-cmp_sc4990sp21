@@ -117,7 +117,6 @@
     if select_menu == " Image":
     ```
     - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
-    - [x] While using buttons, save the position of camera in variable
       - [x] For Left-arrow button ( ← ):
         ```python 
         elif key == Key.left:
@@ -134,6 +133,7 @@
             c_index = 0                       # If the result higher than the max index assign zero instead of the result
             camera = image_source[c_index]    # Save Current Camera View
         ```
+       - [x] While using buttons, save the position of camera in variable
     - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage 
      ```python 
        image_response = image_client.get_image_from_sources([camera])[0]
