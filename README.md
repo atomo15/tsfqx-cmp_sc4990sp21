@@ -153,9 +153,8 @@
   - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
 - [x] Synchronize the Ptz with the keyboard command
 - [x] Capture Image From Ptz:   
-      ```python 
-      global args
-                
+```python 
+      global args          
       lp = medialog_client.store(*args)
                 
       while lp.status != logging_pb2.Logpoint.COMPLETE:
