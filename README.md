@@ -326,7 +326,7 @@
 
 ## Result Video:
 
-[![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "align: center;")
+[![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "Youtube")
 
 
 ## Conclusions:
