@@ -144,6 +144,20 @@
       if select_menu == " Ptz":
     ```
     - [x] Using Left-arrow button ( ← ) and Right-arrow button ( → ) to switch the camera view in horizontal (Hold value in variable)
+      - [x] For Left-arrow button ( ← ):
+        ```python 
+          if x>0:
+            x-=1
+            ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
+            c = True #Show current position on main display
+        ```
+      - [x] For Right-arrow button ( → ):
+        ```python 
+          if x >= 0 and x <=360:
+              x+=1
+              ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
+              c = True
+        ```
     - [x] Using Up-arrow button ( ↑ ) and Down-arrow button ( ↓ ) to switch the camera view in Vertical (Hold value in variable)
     - [x] Using = and - to zoom in and out respectively (Hold value in variable)
 
