@@ -293,7 +293,7 @@
           os.remove(target_filename)
   ```
 
-### Experimental results:
+## Experimental results:
 
   #### Detect Input Part:
   - Obstacle:
@@ -324,8 +324,8 @@
     -  [x] Create Ptz instance
     -  [x] Calling Set Position Method of Ptz  
 
-### Result Video:
+## Result Video:
 [![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "")
 
-### Conclusions:
+## Conclusions:
 - For this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library
