@@ -325,9 +325,9 @@
     -  [x] Calling Set Position Method of Ptz  
 
 ## Result Video:
-<div style="align: center;">
-[![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "")
-</div>
+
+[![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "align: center;")
+
 
 ## Conclusions:
 - For this project, we would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, we might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library
