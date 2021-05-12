@@ -38,7 +38,7 @@
 
 
 ### Overview Tsfqx Project Diagram: Algorithm in Program
-![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/117382573-6d816c00-aea4-11eb-84c2-6dc6a4256f82.jpg)
+![Tsfqx_SpotProject_Diagram](https://user-images.githubusercontent.com/49804761/118049651-a6598f00-b343-11eb-9d24-93c043a5bc5e.jpg)
 
 
 ### Setup Spot Process Diagram: Tsfqx Program
