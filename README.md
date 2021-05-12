@@ -60,6 +60,7 @@
   2. Detect Input → Detecting input from the users
   3. Body Camera Spot → Controlling the Body Camera of the spot
   4. Ptz → Controlling the Spot CAM Ptz 
+  5. MediaLog  → Capturing Images from Spot CAM Ptz
 
 #### Initial Spot Part:
 - [x] Import Libraries:
