@@ -21,10 +21,15 @@ from bosdyn.api.spot_cam import logging_pb2, camera_pb2
 
 from PIL import Image #open image file
 import io
+import tempfile
+import os
+import shutil
 
 import inspect
 
-
+class Namespace:
+    def __init__(self, **kwargs):
+        self.__dict__.update(kwargs)
 
 
 #print(dir(PtzClient.get_ptz_position))
@@ -72,7 +77,7 @@ state_client = robot.ensure_client('robot-state')
 
 state_bot = state_client.get_robot_state()
 
-print(state_bot)
+#print(state_bot)
 
 #Set up image instance
 image_client = robot.ensure_client(ImageClient.default_service_name)
@@ -94,18 +99,7 @@ ptz_client = robot.ensure_client(PtzClient.default_service_name)
 
 #Ptz capture
 medialog_client = robot.ensure_client(MediaLogClient.default_service_name)
-#options = Namespace(camera_name='ptz', command='media_log', dst=None, hostname='192.168.80.3', media_log_command='store_retrieve', password='atom29589990', save_as_rgb24=False, stitching=True, username='atom', verbose=False)
-#options = [camera_name='ptz',command='media_log',dst=None,hostname='192.168.80.3',media_log_command='store_retrieve',password='atom29589990',save_as_rgb24=False,stitching=True,username='atom',verbose=False]
-#
-#args = (camera_pb2.Camera(name="ptz"), logging_pb2.Logpoint.STILLIMAGE)
-#
-#lp = client.store(*args)
-#
-#while lp.status != logging_pb2.Logpoint.COMPLETE:
-#    lp = client.get_status(lp)
-#
-#lp = MediaLogRetrieveCommand.save_logpoint_as_image(robot, lp, options, dst_filename=None)
-
+args = (camera_pb2.Camera(name="ptz"),logging_pb2.Logpoint.STILLIMAGE)
 #Ptz capture
 
 
@@ -168,6 +162,9 @@ def on_press(key):
                     ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
                     z-=1
                     c = True
+        elif key.char == 'q':
+            print("exit")
+            exit(0)
         elif key.char == 'w':
             print("Going forward")
         elif key.char == 'd':
@@ -235,6 +232,39 @@ def on_press(key):
                 image = Image.open(io.BytesIO(image_response.shot.image.data))
                 image.show()
             elif select_menu == " Ptz":
+                global args
+                lp = medialog_client.store(*args)
+                while lp.status != logging_pb2.Logpoint.COMPLETE:
+                    lp = medialog_client.get_status(lp)
+                    
+                options = Namespace(camera_name='ptz', command='media_log', dst=None, hostname='192.168.80.3', media_log_command='store_retrieve', password='atom29589990',save_as_rgb24=False, stitching=True, username='atom',verbose=False)
+                
+                ir_flag = hasattr(options, 'camera_name') and options.camera_name == 'ir'
+                
+                if options.stitching or ir_flag:
+                    lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve(lp)
+                else:
+                    lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve_raw_data(lp)
+                    
+                with tempfile.NamedTemporaryFile(delete=False) as img_file:
+                    img_file.write(img)
+                    src_filename = img_file.name
+                
+                dst_filename = os.path.basename(src_filename)
+                
+                if lp.image_params.height == 4800 or (lp.image_params.width == 640 and lp.image_params.height == 512):
+                    shutil.move(src_filename, '{}.jpg'.format(dst_filename))
+                else:
+                    target_filename = '{}-{}x{}.rgb24'.format(dst_filename, lp.image_params.width, lp.image_params.height)
+                    shutil.move(src_filename, target_filename)
+                    if not options.save_as_rgb24:
+                        with open(target_filename, mode='rb') as fd:
+                            data = fd.read()
+                        mode = 'RGB'
+                        image = Image.frombuffer(mode, (lp.image_params.width, lp.image_params.height), data, 'raw', mode, 0, 1)
+                        image.save('{}.jpg'.format(dst_filename))
+                        os.remove(target_filename)
+#                lp = MediaLogRetrieveCommand.save_logpoint_as_image(robot, lp, options, dst_filename=None)
                 print("Capture Ptz")
     if r == False:
         save(x,y,z)
