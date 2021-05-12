@@ -129,11 +129,13 @@
         ```python 
         c_index = c_index + 1             # Increase Index of Camera View 
         if c_index == len(image_source):  # Check Index out of range or not after add index
-        c_index = 0                       # If the result higher than the max index assign zero instead of the result
-        camera = image_source[c_index]    # Save Current Camera View
+          c_index = 0                       # If the result higher than the max index assign zero instead of the result
+          camera = image_source[c_index]    # Save Current Camera View
         ```
     - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage 
-       - [x] image_response = image_client.get_image_from_sources([camera])[0]
+     ```python 
+       image_response = image_client.get_image_from_sources([camera])[0]
+     ```
 
   - [x] For Press 2 (Control Spot Cam, PTZ):
     - [x] if select_menu == " Ptz":
