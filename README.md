@@ -99,9 +99,11 @@
   - [x] Using def on_press(key): #Detecting the button that user press on keyboard 
     - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
       - [x] Press 1 for Control Spot Body Cam condition: 
+        ```python 
         - [x] if key.char == '1':
         - [x] camera = image_source[0]
         - [x] select_menu = " Image"
+        ```python 
       - [x] Press 2 for Control Spot Cam Ptz condition: 
         - [x] if key.char == '2':
         - [x] select_menu = " Ptz" 
