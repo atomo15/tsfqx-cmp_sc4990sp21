@@ -256,6 +256,11 @@
     ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
   ``` 
 - [x] Synchronize the Ptz with the keyboard command
+- [x] Create Medialog instance: for Capture Image From Ptz
+  ```python 
+    medialog_client = robot.ensure_client(MediaLogClient.default_service_name)
+    args = (camera_pb2.Camera(name="ptz"),logging_pb2.Logpoint.STILLIMAGE)
+  ```
 - [x] Capture Image From Ptz:   
   ```python 
       global args          
