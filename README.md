@@ -119,10 +119,12 @@
     - [x] Using Left-arrow button ( ← ) [previous camera view] and Right-arrow button ( → ) [next camera view] to switch the camera view
     - [x] While using buttons, save the position of camera in variable
       - [x] For Left-arrow button ( ← ):
-        - [x] c_index = c_index - 1             # Decrease Index of Camera View 
-        - [x] if c_index <0:                    # Check Index is not lower than zero after subtracted
-        - [x] c_index = 0                       # If the result lower than zero assign zero instead of the result
-        - [x] camera = image_source[c_index]    # Save Current Camera View
+        ```python 
+        c_index = c_index - 1             # Decrease Index of Camera View 
+        if c_index <0:                    # Check Index is not lower than zero after subtracted
+          c_index = 0                       # If the result lower than zero assign zero instead of the result
+          camera = image_source[c_index]    # Save Current Camera View
+        ```
       - [x] For Right-arrow button ( → ):
         - [x] c_index = c_index + 1             # Increase Index of Camera View 
         - [x] if c_index == len(image_source):  # Check Index out of range or not after add index
