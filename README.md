@@ -166,12 +166,12 @@
     - [x] from bosdyn.client import spot_cam
     - [x] from bosdyn.api.spot_cam import ptz_pb2
   - [x] Capture Image from the Ptz Spot CAM:
-    - [x] from bosdyn.client.spot_cam.media_log import MediaLogClient
-    - [x] from bosdyn.api import image_pb2
-    - [x] from bosdyn.api.spot_cam import logging_pb2, camera_pb2
-    - [x] import tempfile
-    - [x] import shutil
     ```python 
+        from bosdyn.client.spot_cam.media_log import MediaLogClient
+        from bosdyn.api import image_pb2
+        from bosdyn.api.spot_cam import logging_pb2, camera_pb2
+        import tempfile
+        import shutil
         class Namespace:
           def __init__(self, **kwargs):
             self.__dict__.update(kwargs)
