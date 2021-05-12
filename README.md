@@ -143,6 +143,12 @@
     ```python 
       if select_menu == " Ptz":
     ```
+    - [x] Set default Pan, tilt, Zoom:
+    ```python 
+      horizontal  = int(0)
+      vertical    = int(0)
+      zoom        = int(0)
+    ```
     - [x] Using Left-arrow button ( ← ) and Right-arrow button ( → ) to switch the camera view in horizontal (Hold value in variable)
       - [x] For Left-arrow button ( ← ):
         ```python 
