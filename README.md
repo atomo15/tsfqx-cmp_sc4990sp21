@@ -152,40 +152,40 @@
 - [x] Synchronize the Ptz with the keyboard command
 - [x] Capture Image From Ptz:   
         
-          global args
+      global args
                 
-          lp = medialog_client.store(*args)
+      lp = medialog_client.store(*args)
                 
-          while lp.status != logging_pb2.Logpoint.COMPLETE:
-            lp = medialog_client.get_status(lp)
+      while lp.status != logging_pb2.Logpoint.COMPLETE:
+        lp = medialog_client.get_status(lp)
               
-          options = Namespace(camera_name='ptz', command='media_log', dst=None, hostname='192.168.80.3', media_log_command='store_retrieve', password='$PASSWORD',save_as_rgb24=False, stitching=True, username='$USERNAME',verbose=False)
+      options = Namespace(camera_name='ptz', command='media_log', dst=None, hostname='192.168.80.3', media_log_command='store_retrieve', password='$PASSWORD',save_as_rgb24=False, stitching=True, username='$USERNAME',verbose=False)
             
-          ir_flag = hasattr(options, 'camera_name') and options.camera_name == 'ir'
+      ir_flag = hasattr(options, 'camera_name') and options.camera_name == 'ir'
                 
-          if options.stitching or ir_flag:
-            lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve(lp)
-          else:
-            lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve_raw_data(lp)
+      if options.stitching or ir_flag:
+        lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve(lp)
+      else:
+        lp, img = robot.ensure_client(MediaLogClient.default_service_name).retrieve_raw_data(lp)
                     
-          with tempfile.NamedTemporaryFile(delete=False) as img_file:
-            img_file.write(img)
-            src_filename = img_file.name
+      with tempfile.NamedTemporaryFile(delete=False) as img_file:
+        img_file.write(img)
+        src_filename = img_file.name
                 
-          dst_filename = os.path.basename(src_filename)
+      dst_filename = os.path.basename(src_filename)
                 
-          if lp.image_params.height == 4800 or (lp.image_params.width == 640 and lp.image_params.height == 512):
-              shutil.move(src_filename, '{}.jpg'.format(dst_filename))
-          else:
-              target_filename = '{}-{}x{}.rgb24'.format(dst_filename, lp.image_params.width, lp.image_params.height)
-              shutil.move(src_filename, target_filename)
-              if not options.save_as_rgb24:
-                  with open(target_filename, mode='rb') as fd:
-                    data = fd.read()
-                  mode = 'RGB'
-                  image = Image.frombuffer(mode, (lp.image_params.width, lp.image_params.height), data, 'raw', mode, 0, 1)
-                  image.save('{}.jpg'.format(dst_filename))
-                  os.remove(target_filename)
+      if lp.image_params.height == 4800 or (lp.image_params.width == 640 and lp.image_params.height == 512):
+        shutil.move(src_filename, '{}.jpg'.format(dst_filename))
+      else:
+        target_filename = '{}-{}x{}.rgb24'.format(dst_filename, lp.image_params.width, lp.image_params.height)
+        shutil.move(src_filename, target_filename)
+        if not options.save_as_rgb24:
+          with open(target_filename, mode='rb') as fd:
+            data = fd.read()
+          mode = 'RGB'
+          image = Image.frombuffer(mode, (lp.image_params.width, lp.image_params.height), data, 'raw', mode, 0, 1)
+          image.save('{}.jpg'.format(dst_filename))
+          os.remove(target_filename)
 
 
 ### Experimental results:
