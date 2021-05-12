@@ -159,7 +159,7 @@
               c = True #Show current position on main display
         ```
     - [x] Using Up-arrow button ( ↑ ) and Down-arrow button ( ↓ ) to switch the camera view in Vertical (Hold value in variable)
-      - [x] For Up-arrow button ( ↑ ):
+        - [x] For Up-arrow button ( ↑ ):
      ```python 
         if key == Key.up:
             if select_menu == " Ptz":
@@ -168,7 +168,7 @@
                     ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
                     c = True
      ```
-      - [x] For Down-arrow button ( ↓ ):
+        - [x] For Down-arrow button ( ↓ ):
      ```python 
         elif key == Key.down:
             if select_menu == " Ptz":
