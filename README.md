@@ -162,9 +162,11 @@
 #### Ptz Part:
 - [x] Import the library for using Spot CAM (Ptz):
   - [x] Control the Ptz Spot CAM:
-    - [x] from bosdyn.client.spot_cam.ptz import PtzClient
-    - [x] from bosdyn.client import spot_cam
-    - [x] from bosdyn.api.spot_cam import ptz_pb2
+    ```python 
+    from bosdyn.client.spot_cam.ptz import PtzClient
+    from bosdyn.client import spot_cam
+    from bosdyn.api.spot_cam import ptz_pb2
+    ```
   - [x] Capture Image from the Ptz Spot CAM:
     ```python 
         from bosdyn.client.spot_cam.media_log import MediaLogClient
