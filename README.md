@@ -149,15 +149,23 @@
 
 #### Camera Spot Part:
 - [x] Import the library for using Camera Spot:
-  - [x] from bosdyn.client.image import ImageClient #operate spot camera
-  - [x] from PIL import Image #open image file
-  - [x] import io
+  ```python 
+    from bosdyn.client.image import ImageClient #operate spot camera
+    from PIL import Image #open image file
+    import io
+  ```
 - [x] Create Image instance: To use the camera
-  - [x] image_client = robot.ensure_client(ImageClient.default_service_name)
+  ```python 
+    image_client = robot.ensure_client(ImageClient.default_service_name)
+  ```
 - [x] Switching the camera view by pressing button 
-  - [x] camera = image_source[c_index]  #Increase or Decrease c_index to change camera view 
+  ```python 
+    camera = image_source[c_index]  #Increase or Decrease c_index to change camera view 
+  ```
 - [x] Pressing Enter to Capture the picture
-  - [x] image_response = image_client.get_image_from_sources([camera])[0]
+  ```python 
+    image_response = image_client.get_image_from_sources([camera])[0]
+  ```
 
 #### Ptz Part:
 - [x] Import the library for using Spot CAM (Ptz):
@@ -174,18 +182,25 @@
         from bosdyn.api.spot_cam import logging_pb2, camera_pb2
         import tempfile
         import shutil
+        import os
         class Namespace:
           def __init__(self, **kwargs):
             self.__dict__.update(kwargs)
     ```
 - [x] Register Spot Cam (Ptz):
-  - [x] spot_cam.register_all_service_clients(sdk)
+  ```python 
+    spot_cam.register_all_service_clients(sdk)
+  ```
 - [x] Create Ptz instance:
-  - [x] ptz_client = robot.ensure_client(PtzClient.default_service_name)
+  ```python 
+    ptz_client = robot.ensure_client(PtzClient.default_service_name)
+  ```
 - [x] Calling set position medthod of Ptz (spot cam)
-  - [x] option_name = "mech"
-  - [x] ptz_desc = ptz_pb2.PtzDescription(name=option_name)
-  - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
+  ```python 
+    option_name = "mech"
+    ptz_desc = ptz_pb2.PtzDescription(name=option_name)
+    ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
+  ```python 
 - [x] Synchronize the Ptz with the keyboard command
 - [x] Capture Image From Ptz:   
   ```python 
