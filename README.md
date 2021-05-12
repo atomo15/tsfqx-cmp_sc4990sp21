@@ -120,17 +120,19 @@
     - [x] While using buttons, save the position of camera in variable
       - [x] For Left-arrow button ( ← ):
         ```python 
-        c_index = c_index - 1               # Decrease Index of Camera View 
-        if c_index <0:                      # Check Index is not lower than zero after subtracted
-          c_index = 0                       # If the result lower than zero assign zero instead of the result
-          camera = image_source[c_index]    # Save Current Camera View
+        elif key == Key.left:
+          c_index = c_index - 1               # Decrease Index of Camera View 
+          if c_index <0:                      # Check Index is not lower than zero after subtracted
+            c_index = 0                       # If the result lower than zero assign zero instead of the result
+            camera = image_source[c_index]    # Save Current Camera View
         ```
       - [x] For Right-arrow button ( → ):
         ```python 
-        c_index = c_index + 1             # Increase Index of Camera View 
-        if c_index == len(image_source):  # Check Index out of range or not after add index
-          c_index = 0                       # If the result higher than the max index assign zero instead of the result
-          camera = image_source[c_index]    # Save Current Camera View
+        elif key == Key.right:
+          c_index = c_index + 1               # Increase Index of Camera View 
+          if c_index == len(image_source):    # Check Index out of range or not after add index
+            c_index = 0                       # If the result higher than the max index assign zero instead of the result
+            camera = image_source[c_index]    # Save Current Camera View
         ```
     - [x] Using return button ( ↩ ) to Capture the picture from camera on each view that the user choose and save to local storage 
      ```python 
