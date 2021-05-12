@@ -143,7 +143,7 @@
     ```python 
       if select_menu == " Ptz":
     ```
-    - [x] Set default Pan, tilt, Zoom:
+    - [x] Set default Pan, tilt, Zoom in global:
     ```python 
       horizontal  = int(0)
       vertical    = int(0)
