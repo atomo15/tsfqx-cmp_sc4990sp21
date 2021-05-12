@@ -138,9 +138,10 @@
     - [x] from bosdyn.api.spot_cam import logging_pb2, camera_pb2
     - [x] import tempfile
     - [x] import shutil
-    ```python class Namespace:
-        def __init__(self, **kwargs):
-        self.__dict__.update(kwargs)
+    ```python 
+        class Namespace:
+          def __init__(self, **kwargs):
+            self.__dict__.update(kwargs)
     ```
 - [x] Register Spot Cam (Ptz):
   - [x] spot_cam.register_all_service_clients(sdk)
