@@ -62,7 +62,9 @@
 
 #### Initial Spot Part:
 - [x] Import Libraries:
-  - [x] import bosdyn.client
+```python 
+  import bosdyn.client
+```
 - [x] Install SDK:
   - [x] sdk = bosdyn.client.create_standard_sdk('spot')
 - [x] Register Spot CAM SDK: Used for Ptz
