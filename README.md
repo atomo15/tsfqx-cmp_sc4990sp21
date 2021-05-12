@@ -84,13 +84,17 @@
 
 #### Detect Input Part:
 - [x] Import Libraries:
-  - [x] from pynput import keyboard
-  - [x] from pynput.keyboard import Key 
+```python 
+  from pynput import keyboard
+  from pynput.keyboard import Key 
+```
 - [x] Detecting Input from Keyboard:
-  - [x] with keyboard.Listener(
+```python 
+  with keyboard.Listener(
                 on_press=on_press,
                 on_release=on_release) as listener:
             listener.join()
+```
 - [x] Create an condition to separate control between the body cam and ptz cam:
   - [x] Using def on_press(key): #Detecting the button that user press on keyboard 
     - [x] Press 1 for controlling body cam or Press 2 for controlling Ptz cam:
