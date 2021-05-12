@@ -4,6 +4,8 @@
 
 ### **Spot Camera:**
 ![spot_body](https://user-images.githubusercontent.com/49804761/117091110-eacfa400-ad1f-11eb-9dbb-e38d3e4c62f7.jpeg)
+![spot](https://user-images.githubusercontent.com/49804761/118058251-613d5900-b353-11eb-8e56-b0d68c8d3f03.gif)
+
 
 ### Spot Cam (PTZ):
 ![spot_cam](https://user-images.githubusercontent.com/49804761/117091165-0c309000-ad20-11eb-9555-f0053f610bef.jpeg)
