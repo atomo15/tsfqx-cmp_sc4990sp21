@@ -153,7 +153,8 @@
   - [x] ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
 - [x] Synchronize the Ptz with the keyboard command
 - [x] Capture Image From Ptz:   
-        
+      
+      ```python 
       global args
                 
       lp = medialog_client.store(*args)
@@ -188,7 +189,7 @@
           image = Image.frombuffer(mode, (lp.image_params.width, lp.image_params.height), data, 'raw', mode, 0, 1)
           image.save('{}.jpg'.format(dst_filename))
           os.remove(target_filename)
-
+       ```
 
 ### Experimental results:
 
