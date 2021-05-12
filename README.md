@@ -200,7 +200,7 @@
     option_name = "mech"
     ptz_desc = ptz_pb2.PtzDescription(name=option_name)
     ptz_position = ptz_client.set_ptz_position(ptz_desc,pan,tilt,zoom)
-  ```python 
+  ``` 
 - [x] Synchronize the Ptz with the keyboard command
 - [x] Capture Image From Ptz:   
   ```python 
