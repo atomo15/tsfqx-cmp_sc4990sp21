@@ -325,11 +325,7 @@
     -  [x] Calling Set Position Method of Ptz  
 
 ## Result Video:
-<div style="margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-">
+<div style="align: center;">
 [![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "")
 </div>
 
