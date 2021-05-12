@@ -178,7 +178,23 @@
                           c = True
            ```
     - [x] Using = and - to zoom in and out respectively (Hold value in variable)
-
+      - [x] For = : Zoom in
+          ```python 
+            if key.char == '=':
+            if select_menu == " Ptz":
+                ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
+                z+=1
+                c = True
+          ```
+      - [x] For - : Zoom out
+          ```python
+            elif key.char == '-':
+              if select_menu == " Ptz":
+                  if z>0:
+                      ptz_position = ptz_client.set_ptz_position(ptz_desc,x,y,z)
+                      z-=1
+                      c = True
+          ```
 #### Camera Spot Part:
 - [x] Import the library for using Camera Spot:
   ```python 
