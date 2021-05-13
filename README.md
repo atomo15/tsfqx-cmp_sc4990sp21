@@ -310,6 +310,7 @@
     - [x] Detecting the input from keyboard and condition 
     - [x] Separate function between Body cam and Ptz cam 
     - [x] Memorized current pan, tilt, zoom and the position of camera spot during switch Body cam and Ptz cam
+    - [x] Swithing between Image and Ptz mode smoothly with save previous value
  
   #### Body Camera Part:
   - Obstacle:
