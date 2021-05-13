@@ -344,9 +344,11 @@
 
 [![My Project](http://img.youtube.com/vi/h1B-MOwWQ7g/0.jpg)](http://www.youtube.com/watch?v=h1B-MOwWQ7g "Youtube")
 
-## Result From Ptz Spot CAM:
+## Example: Result From Ptz Spot CAM:
 ![video_ptz](https://user-images.githubusercontent.com/49804761/118060789-33f3a980-b359-11eb-8c5d-b8d395945ff2.jpg)
 
+## Example: Result From Body Spot camera:
+![result](https://user-images.githubusercontent.com/49804761/118061294-4f12e900-b35a-11eb-89e3-d7fe6d08eece.png)
 
 ## Conclusions:
 - For this project, I learn how to install the spot SDK, the restriction with connecting to the spot technically, how to run the code from laptop to spot, know how the spot works such as when we turn on the spot with blue button, it does not mean we power on the spot, it means the brain or CPU inside of spot waiting for the command from controller or program that we wrote, the spot cannot move until we press the button next to the power button which is red, this button will unlock all of the joint of the Spot. if we turn the blue button, it will consume energy lower than we turn on the blue button with the red button because the joint will consume the power a lot. the CPU, which is the brain of the spots, is intelligent because even we try to command whatever it is, the spot will think about what he can do it or not, if he can do it, your command will work. on the other hand, if not, he will deny and it will show up as an error on the terminal. from my research, I learn more about how to connect the spot with my own program, how to detect input from the keyboard, how to switch the camera and capture an image with the body cam, how to adjust the angle, and capture images from Ptz Spot cam. moreover, I would like to focus on how to control the spots by creating the program from python to control the spots by using a keyboard instead of the main controller for the prototype, and further, I might transform it into Moblie Application after we figure it out how to control it by coding with Boston Dynamics Library or using for Machine Learning, Deep Learning that using Ptz Spot cam by expanding the perspective view, finally, all of the objective and implementation on this project are successfully that can command body cam and Ptz spot cam in terms of the program and also demo video result will obviously visualize the result from this course. 
