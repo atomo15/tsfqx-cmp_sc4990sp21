@@ -324,12 +324,18 @@
   - Obstacle:
     -  Calling Methods of Ptz's instance and passing the parameter
     -  Register the ptz package
+    -  Calling methods of Medialog's instance and passing the parameter
+    -  Save Image from Ptz
    
   - Success:
     -  [x] Import the ptz library   
     -  [x] Register the ptz module   
     -  [x] Create Ptz instance
     -  [x] Calling Set Position Method of Ptz  
+    -  [x] Adjust Angle of Ptz camera
+    -  [x] Import the medialog library
+    -  [x] Capture Image from return button
+    -  [x] Save image from Ptz camera into local storage 
 
 ## Result Video:
 
